@@ -13,11 +13,17 @@ public class TestValidator{
 	String pass1a = "password";
 	String pass1b = "PasSwOrd";
 	String pass1c = "hi";
-	String pass2 = "Werenostrangerstoloveyouknowtherulesandsodoi";
+	String pass2 = "werenostrangerstoloveyouknowtherulesandsodoi";
+	String pass3 = "HelloThere";
+	String pass4 = "HelloThere0";
+	String pass5 = "HelloThere0^";
 
 	assertEquals(Validator.checkPassword(pass1a), 1);
-	assertEquals(Validator.checkPassword(pass1b), 1);
+	assertEquals(Validator.checkPassword(pass1b), 2);
 	assertEquals(Validator.checkPassword(pass1c), 1);
 	assertEquals(Validator.checkPassword(pass2), 2);
+	assertEquals(Validator.checkPassword(pass3), 3);
+	assertEquals(Validator.checkPassword(pass4), 4);
+	assertEquals(Validator.checkPassword(pass5), 5);
     }
 }
