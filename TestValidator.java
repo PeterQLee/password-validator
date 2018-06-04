@@ -3,9 +3,10 @@ import org.junit.*;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static Valdiator.checkPassword;
+//import Validator.*;
+//import static Validator.checkPassword;
 public class TestValidator{
-    @test
+    @Test
     public void testCheckPassword() {
 	/* Test different combination for passwords */
 	
