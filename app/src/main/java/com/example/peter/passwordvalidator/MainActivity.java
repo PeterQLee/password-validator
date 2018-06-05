@@ -2,6 +2,9 @@ package com.example.peter.passwordvalidator;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -45,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 	}
 	
 	/* Set message for the user*/
-	TextView tv_message = (TextView) findViewById(R.id.message);
+	TextView tv_message = (TextView) findViewById(R.id.strength_message);
 	tv_message.setText(retstr);
     }
 }
