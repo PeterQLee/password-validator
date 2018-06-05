@@ -1,3 +1,7 @@
+package com.example.peter.passwordvalidator;
+
+import com.example.peter.passwordvalidator.Validator;
+
 import org.junit.*;
 
 import org.junit.Test;
