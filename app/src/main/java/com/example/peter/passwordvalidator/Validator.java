@@ -1,3 +1,5 @@
+package com.example.peter.passwordvalidator;
+
 public class Validator{
 
     // useless comment jargon
